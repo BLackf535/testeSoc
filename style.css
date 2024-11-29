@@ -1,9 +1,17 @@
-	body {
-	            font-family: Arial, sans-serif;
-	            background-color: #f4f4f9;
-	}
-
-	h1 {
-	            color: #333;
-	            text-align: center;
-	}
+body {
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .banner {
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .card-title {
+            color: #007bff;
+        }
+        
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        
