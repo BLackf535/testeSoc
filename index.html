@@ -9,67 +9,102 @@
 </head>
 <body>
     <!-- Entête -->
-    <header class="bg-primary text-white py-3">
+    <header class="bg-primary text-white py-3 sticky-top shadow">
         <div class="container d-flex justify-content-between align-items-center">
             <h1 class="h3">SOC</h1>
             <nav>
                 <ul class="nav">
-                    <li class="nav-item"><a href="#" class="nav-link text-white">Accueil</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-white">Produits</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-white">À propos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
+                    <li class="nav-item"><a href="#slider" class="nav-link text-white">Accueil</a></li>
+                    <li class="nav-item"><a href="#apropos" class="nav-link text-white">À propos</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Bannière -->
-    <section class="banner text-white text-center py-5" style="background-image: url('https://via.placeholder.com/1920x500'); background-size: cover;">
-        <div class="container">
-            <h2 class="display-5 fw-bold">Bienvenue chez SOC</h2>
-            <p class="lead">Découvrez les meilleures boissons du Cameroun.</p>
-            <a href="#produits" class="btn btn-light">Nos Produits</a>
-        </div>
-    </section>
-
-    <!-- Contenu principal -->
-    <main class="py-5">
-        <div class="container">
-            <h3 class="text-primary text-center mb-4">Nos Produits</h3>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow">
-                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Produit 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Produit 1</h5>
-                            <p class="card-text">Description rapide du produit 1.</p>
-                            <a href="#" class="btn btn-primary">En savoir plus</a>
-                        </div>
+    <!-- Slider d'images -->
+    <section id="slider">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="fleur/HTML.png" class="d-block w-100" alt="Image 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Bienvenue chez SOC</h5>
+                        <p>Découvrez les boissons qui rassemblent le Cameroun.</p>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow">
-                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Produit 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Produit 2</h5>
-                            <p class="card-text">Description rapide du produit 2.</p>
-                            <a href="#" class="btn btn-primary">En savoir plus</a>
-                        </div>
+                <div class="carousel-item">
+                    <img src="fleur/recy.png" class="d-block w-100" alt="Image 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Produits de qualité</h5>
+                        <p>Un savoir-faire authentique pour des moments inoubliables.</p>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow">
-                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Produit 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Produit 3</h5>
-                            <p class="card-text">Description rapide du produit 3.</p>
-                            <a href="#" class="btn btn-primary">En savoir plus</a>
-                        </div>
+                <div class="carousel-item">
+                    <img src="fleur/sql.png" class="d-block w-100" alt="Image 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Partenaire de vos fêtes</h5>
+                        <p>Partagez vos instants de bonheur avec nos boissons.</p>
                     </div>
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
         </div>
-    </main>
+    </section>
+
+    <!-- Section d'Informations avec Image et Texte -->
+    <section id="apropos" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">Qui sommes-nous ?</h2>
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                    <img src="fleur/photo1.jpeg" class="img-fluid" alt="Notre Histoire">
+                </div>
+                <div class="col-md-6">
+                    <h3>Notre histoire</h3>
+                    <p>La SOC (Société des Boissons du Cameroun) est née dans le but de promouvoir les boissons de qualité fabriquées localement. Nous mettons en avant l'authenticité et le goût unique des produits camerounais.</p>
+                </div>
+            </div>
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6 order-md-2">
+                    <img src="fleur/photo4.jpeg" class="img-fluid" alt="Boissons de Qualité">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h3>Des produits de qualité</h3>
+                    <p>Nos boissons sont préparées avec les meilleurs ingrédients locaux, respectant les normes de qualité les plus strictes pour offrir à nos clients une expérience inoubliable.</p>
+                </div>
+            </div>
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                    <img src="fleur/photo7.jpeg" class="img-fluid" alt="Nos Engagements">
+                </div>
+                <div class="col-md-6">
+                    <h3>Nos engagements</h3>
+                    <p>Nous nous engageons à promouvoir une production respectueuse de l'environnement, en réduisant notre empreinte carbone et en soutenant les communautés locales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section de Contact -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">Contactez-nous</h2>
+            <p class="text-center">Pour toute information, contactez notre équipe dévouée.</p>
+        </div>
+    </section>
 
     <!-- Pied de page -->
     <footer class="bg-dark text-white py-3">
@@ -79,6 +114,15 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="scripts.js"></script>
+    <script>
+        // JavaScript pour ajuster dynamiquement la hauteur du carrousel si nécessaire
+        window.addEventListener('load', function() {
+            const carouselItems = document.querySelectorAll('.carousel-inner .carousel-item img');
+            carouselItems.forEach(function(item) {
+                item.style.height = '100%'; // S'assurer que l'image occupe toute la hauteur du carrousel
+                item.style.objectFit = 'cover'; // Assurer que l'image couvre l'espace sans déformation
+            });
+        });
+    </script>
 </body>
 </html>

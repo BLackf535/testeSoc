@@ -2,16 +2,56 @@ body {
             font-family: 'Arial', sans-serif;
         }
         
-        .banner {
-            background: rgba(0, 0, 0, 0.5);
+        #slider .carousel-caption h5 {
+            font-size: 2rem;
+            font-weight: bold;
         }
         
-        .card-title {
+        #slider .carousel-caption p {
+            font-size: 1.2rem;
+        }
+        
+        /* Définir la taille du carrousel et tracer les bordures */
+        .carousel-inner {
+            height: 400px; /* Ajuster la hauteur pour voir les images dans le carrousel */
+            position: relative;
+        }
+        
+        .carousel-inner img {
+            max-height: 100%;  /* L'image prend la hauteur totale du carrousel */
+            width: 100%;  /* L'image prend toute la largeur du carrousel */
+            object-fit: cover;  /* Assure que l'image couvre toute la zone sans déformation */
+        }
+        
+        /* Section Apropos */
+        #apropos h3 {
             color: #007bff;
+        }
+        
+        #apropos .row {
+            margin-bottom: 30px;
+        }
+        
+        #apropos .img-fluid {
+            max-height: 300px;
+            object-fit: cover;
+        }
+        
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
         }
         
         footer p {
             margin: 0;
-            font-size: 0.9rem;
+        }
+        
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            background-color: #007bff;
+        }
+        
+        .carousel-indicators button {
+            background-color: #007bff;
         }
         
